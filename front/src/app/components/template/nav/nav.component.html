@@ -2,13 +2,17 @@
     <mat-sidenav class="sidenav" mode="side" opened
         fixedInViewport="true" fixedTopGap="64">
         <mat-nav-list class="nav-list">
-            <a mat-list-item>
+            <a mat-list-item routerLink="/">
                 <i class="material-icons">
                     home
                 </i>
                 Início
             </a>
+<<<<<<< HEAD:src/app/components/template/nav/nav.component.html
             <a mat-list-item>
+=======
+            <a mat-list-item routerLink="/products">
+>>>>>>> 6dcd5ebc6bf5bf6484ff7a9a6241f6dee6070d4f:front/src/app/components/template/nav/nav.component.html
                 <i class="material-icons">
                     storefront
                 </i>
@@ -16,4 +20,9 @@
             </a>
         </mat-nav-list>
     </mat-sidenav>
+    <mat-sidenav-content class="content">
+        <router-outlet>
+
+        </router-outlet>
+    </mat-sidenav-content>
 </mat-sidenav-container>
